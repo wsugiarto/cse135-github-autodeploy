@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wilson Sugiarto's personal site for recruiters and interviewers.">
+    <meta name="keywords"    content="Wilson, Sugiarto, Software, Computer Science, Recruiting">
+    <meta property="og:title"       content="Wilson's Personal Site">
+    <meta property="og:description" content="Wilson Sugiarto's personal site for recruiters and interviewers.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Wilson's Personal Site</title>
+    
+</head>
+<body>
+    <div id="button-container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">Toggle Theme</button>
+        <noscript>
+        JavaScript is off theme switcher unavailable.
+        </noscript>
+    </div>
+    <header>
+        <noscript>This should still work without java script.</noscript>
+        <h1>Wilson Sugiarto</h1>
+        <nav> 
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                
+            </ul>
+        </nav>
+        <details id="nav-menu">
+            <summary>Menu</summary>
+            <ul>
+                <li><a href="/about.html">Home</a></li>
+                
+            </ul>
+        </details>
+
+        
+        
+    </header>
+
+    <main>
+        <section>
+            <h1>About Me</h1>
+        </section>
+        
+        <section id="about-section">
+            
+            <h2>Personal Infomration</h2>
+            <p>Hi I am <b>Wilson</b>, a 20 year old college student from <i>Indonesia</i>. I currently study <em>Computer Science</em> as a rising senior at UCSD.
+            I discovered my passion for creating software when I was introduced to tutorials on modding video games such as Minecraft, which also became my first
+            computer science based project. Today, I still enjoy creating modifications for other software, but I have also developed a strong interest in recommender 
+            systems and machine learning.</p>
+        </section>
+        <picture>
+                <source media ="(min-width:1650px)" srcset="me.jpg" width="250" height="250">
+                <!-- <source media ="(min-width:450px)" srcset="me2.jpg" width="300" height="300"> -->
+                <img src="me.jpg" alt="A picture of Wilson Sugiarto" width="250" height="250">
+        </picture>
+        
+        <section id="project-section">
+            <h2>Current Project</h2>
+            <h3>Music Generation Model</h3>
+            <p>Use machine learning to generate music. Using <span id="span-example">LSTM models and markov chain models</span>, we were able to generate new pieces and continuations. </p>
+            <aside>I particularly enjoy making extensions for <dfn>8 bit music</dfn>, which is a style of electronic music that uses the sound chips found 
+                in early computers and video game consoles, as they are easy to train on and produce for the models.</aside>
+            <details>
+                <summary>Here is a sample if you would like a listen:</summary> 
+                <audio controls>
+                    <source src="/symbolic_conditioned_jigs318_lstm.mp3">
+                </audio>
+
+            </details>
+        </section>
+
+        <section id="hobbies-section">
+            <h2>Hobbies/Interests</h2>
+            <h3>Work-Related Hobbies</h3>
+                <ul>
+                    <li>Building Recommender Systems</li>
+                    <li>Modding video games</li>
+                </ul>
+            
+            <h3>Recreational hobbies</h3>
+                <ol>
+                    <li>Competitive FPS Games</li>
+                    <li>Building Recommender Systems</li>
+                    <li>Building Gunpla</li>
+                </ol>
+            
+        </section>
+
+        
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="theme-switcher.js"></script>
+</body>
+</html>

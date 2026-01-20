@@ -1,0 +1,11 @@
+:root{
+    --header-background: rgb(188, 188, 188);
+    --bg-page: #f0f2f5;        /* very light grey page background */
+    --bg-section: #ffffff;     /* white for section “cards” */
+    --text-primary: #2c3e50;   /* dark slate for most text */
+    --text-secondary: #555;    /* medium grey for sub‑text */
+
+    --color-primary: #18bc9c;  /* minty teal for buttons & links */
+    --color-primary-dark: #15a589;
+    --color-header: #34495e;   /* dark blue‑grey header/nav background */
+}
