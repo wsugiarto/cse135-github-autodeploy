@@ -164,6 +164,8 @@ main{
         flex: 1 1 50%;
 
     }
+    
+
 
     #hobbies-section ul, ol{
         list-style-position: inside;
@@ -190,6 +192,7 @@ main{
     }
     
 }
+
 footer{
     display:flex;
     align-items: stretch;

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo</title>
+</head>
+<body>
+
+<h1>Echo Test Form</h1>
+<noscript>
+  <p><b>JavaScript disabled:</b> basic GET only.</p>
+</noscript>
+
+<form id="echoForm" action="/hw2/python/echo-python.py" method="GET">
+  <label>Language:</label>
+  <select id="language">
+    <option value="python">Python</option>
+    <option value="php">PHP</option>
+    <option value="nodejs">NodeJS</option>
+  </select>
+  <br>
+  <br>
+
+  <label>Method:</label>
+  <select id="method">
+    <option>GET</option>
+    <option>POST</option>
+    <option>PUT</option>
+    <option>DELETE</option>
+  </select>
+  <br>
+  <br>
+
+  <label>Encoding:</label>
+  <select id="encoding">
+    <option value="form">x-www-form-urlencoded</option>
+    <option value="json">application/json</option>
+  </select>
+  <br>
+  <br>
+
+  <label>Message:</label>
+  <input type="text" name="message">
+  <br>
+  <br>
+
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  const form = document.getElementById("echoForm");
+  const lang = document.getElementById("language");
+  const method = document.getElementById("method");
+  const encoding = document.getElementById("encoding");
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // endpoint
+    if (lang.value === "python") {
+        form.action = "/hw2/python/echo-python.py";
+    } 
+    else if (lang.value === "php") {
+        form.action = "/hw2/php/echo-php.php";
+    }
+    else if (lang.value === "nodejs"){
+        form.action = "/hw2/nodejs/echo-nodejs";
+    }
+
+    const m = method.value;
+    const message = form.elements["message"].value;
+    if (encoding.value === "json") {
+      fetch(form.action, 
+      {
+        method: m,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: message })
+      }).then(r => r.text()).then(t => document.write(t));
+    } 
+    else {
+      if (m === "GET") {
+        window.location =
+          form.action + "?message=" + encodeURIComponent(message);
+      } else {
+        fetch(form.action, 
+        {
+          method: m,
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: "message=" + encodeURIComponent(message)
+        }).then(r => r.text()).then(t => document.write(t));
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
