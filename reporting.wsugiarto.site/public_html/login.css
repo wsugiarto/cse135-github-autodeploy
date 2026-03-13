@@ -1,0 +1,115 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: #f3f4f6;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body > h1,
+body > p,
+body > form {
+
+}
+
+
+body {
+  flex-direction: column;
+  gap: 0;
+}
+
+h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+  text-align: center;
+}
+
+p[style] {
+  color: #c0392b !important;
+  background: #fdecea;
+  font-size: 0.84rem;
+  text-align: center;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin: 0 0 10px;
+}
+
+form {
+  background: #fff;
+  padding: 28px 28px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  width: 320px;
+  max-width: 90vw;
+}
+
+label {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 9px 11px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 7px;
+  background: #fff;
+  color: #1a1a1a;
+  transition: border-color 0.15s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4e79a7;
+  box-shadow: 0 0 0 3px rgba(78, 121, 167, 0.12);
+}
+
+br {
+  display: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #fff;
+  background: #4e79a7;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: #3d6289;
+}
+
+button:active {
+  background: #2f4e6f;
+}

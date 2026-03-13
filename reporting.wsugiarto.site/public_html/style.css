@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 32px 24px;
+  background: #fafafa;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+h1 + p {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 0 0 28px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+  max-width: 420px;
+}
+
+ul li {
+  margin: 0;
+}
+
+ul li a,
+li a {
+  display: block;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
+}
+
+ul li a:hover,
+li a:hover {
+  background: #e8ecf0;
+  color: #4e79a7;
+}
+
+ul li:nth-child(6) {
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+body > li {
+  list-style: none;
+  max-width: 420px;
+}
+
+body > p:last-of-type {
+  margin-top: 20px;
+}
+
+body > p:last-of-type a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: #888;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+body > p:last-of-type a:hover {
+  background: #e8ecf0;
+  color: #555;
+}
+
+
+/* Manage User CSS */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  padding: 0 0 14px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+nav a:hover {
+  background: #e8ecf0;
+  color: #1a1a1a;
+}
+
+nav a:last-child {
+  margin-left: auto;
+  color: #888;
+}
+
+h1 + p {
+  font-size: 0.84rem;
+  color: #666;
+  max-width: 640px;
+  margin: 4px 0 20px;
+}
+
+.ok {
+  color: #1a7f37;
+  background: #dafbe1;
+  font-size: 0.84rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  max-width: 800px;
+}
+
+.err {
+  color: #c0392b;
+  background: #fdecea;
+  font-size: 0.84rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  max-width: 800px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: #1a1a1a;
+}
+
+.card p {
+  font-size: 0.84rem;
+  color: #555;
+  margin: 2px 0;
+}
+
+code {
+  background: #eef1f5 !important;
+  font-size: 0.8rem;
+  padding: 2px 7px !important;
+  border-radius: 5px !important;
+  color: #4e79a7;
+}
+
+.card label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #444;
+  margin: 10px 0 2px;
+}
+
+.card input,
+.card select {
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 8px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 7px;
+  background: #fff;
+  color: #1a1a1a;
+  transition: border-color 0.15s;
+}
+
+.card input:focus,
+.card select:focus {
+  outline: none;
+  border-color: #4e79a7;
+  box-shadow: 0 0 0 3px rgba(78, 121, 167, 0.12);
+}
+
+.card button {
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background: #4e79a7;
+  transition: background 0.15s;
+}
+
+.card button:hover {
+  background: #3d6289;
+}
+
+.card button:active {
+  background: #2f4e6f;
+}
